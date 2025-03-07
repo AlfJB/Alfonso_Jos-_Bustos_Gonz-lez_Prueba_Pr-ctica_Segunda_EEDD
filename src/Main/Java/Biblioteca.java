@@ -5,15 +5,26 @@ import java.util.List;
 
 public class Biblioteca {
 
-    // TODO: Documentar estos atributos
+    /**@param List<Libro> libros: se trata de un arrayList.
+     *
+     */
+    /
     private final List<Libro> libros;
 
-    // TODO: Documentar este método
+    /**
+     * @param Biblioteca: Objeto de clase el cuál es un arrayList de libros
+     * Creamos un nuevo arrayList de libros con el que empezaremos a trabajar.
+     */
+
     public Biblioteca() {
         libros = new ArrayList<>();
     }
 
-    // TODO: Documentar este método.
+    /**
+    *El arrayList Biblioteca toma un nuevo objeto libro, siendo libros una lista.
+     * @param this.libros: usado para poder acceder al objeto privado libros
+    *
+    */
     //  Test: NO HAY QUE TESTEAR ESTE METODO
     public Biblioteca(List<Libro> libros) {
         this.libros = libros;
@@ -31,10 +42,25 @@ public class Biblioteca {
         return libros.remove(libro);
     }
 
+    /**
+    *
+    *Pasamos el objeto List el cual pide un libro con el get a los existentes en el método,
+     * dando como resultado un retorno del libro llamado.
+    *
+    */
+
     // TODO: Documentar este método
     public List<Libro> getLibros() {
         return libros;
     }
+
+    /**
+     * El método busca un objeto libro hacicendo una llamada al objeto privado título.
+     * En caso de introducir un título existente en nuestra base de datos nos retornará un objeto
+     * libro con ese nombre. En caso de no existir dicho título nos dará un valor null.
+     *
+     */
+    /
 
     // TODO: Documentar este método.
     //  Test 01: buscar libro existente y comprobar que lo localiza.
@@ -47,6 +73,15 @@ public class Biblioteca {
         }
         return null;
     }
+
+    /**
+     *Método anteriormente utilizado, actualmente sin uso. Realizaba una búsqueda del objeto libro a través
+     * de su autor. Hacía una llamada al nombre del autor y en caso de existir un libro relacionado a ese nombre
+     * nos lo retorna, en caso contrario nos da un valor null.
+     *
+     *
+     */
+    /
 
     // TODO: Documentar este metodo.
     //  No testearlo
@@ -62,6 +97,14 @@ public class Biblioteca {
         }
         return null;
     }
+
+    /**
+     *Método relacionado con el anterior, actualmente válido.
+     * Del mismo modo que el anterior, hace una llamada al objeto autor para relacionarlo con un arrays de
+     * libros de forma que en caso de que encuentre algún libro de dicho autor se acumulen en el array
+     * que crea el método.
+     */
+    /
 
     // TODO: Documentar este metodo
     // Este metodo sustituye al metodo anterior. Está disponible desde la
