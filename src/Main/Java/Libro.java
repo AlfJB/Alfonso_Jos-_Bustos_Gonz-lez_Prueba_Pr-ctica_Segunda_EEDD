@@ -1,7 +1,7 @@
 package biblioteca;
 
 public class Libro {
-    /**
+    /**@autor: ALFONSO JOSÉ BUSTOS GONZÁLEZ
      * @param título: el título del libro
      * @param autor: el autor el libro
      * @param anioPublicacion: fecha en la que se publicó el libro
